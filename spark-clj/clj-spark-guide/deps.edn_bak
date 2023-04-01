@@ -1,0 +1,5 @@
+{:paths ["src"]
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+       	gorillalabs/sparkling {:mvn/version "3.2.1"}
+        org.apache.spark/spark-core_2.12 {:mvn/version "3.3.2"}
+        org.apache.spark/spark-sql_2.12 {:mvn/version "3.3.2"}}}
