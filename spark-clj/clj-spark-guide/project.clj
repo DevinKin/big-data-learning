@@ -9,7 +9,8 @@
   :main main.app
   :repositories {"local" ~(str (.toURI (java.io.File. "local_repo")))}
   :profiles {:provided {:dependencies [[org.apache.spark/spark-core_2.12 "3.3.2"]
-                                       [org.apache.spark/spark-sql_2.12 "3.3.2"]]}
+                                       [org.apache.spark/spark-sql_2.12 "3.3.2"]
+                                       [org.apache.spark/spark-hive_2.12 "3.3.2"]]}
              :dev {:plugins [[lein-dotenv "RELEASE"]]
                    :resource-paths ["src/main/resources/"]}})
 

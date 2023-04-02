@@ -19,3 +19,5 @@ pom.xml.asc
 spark-warehouse
 .DS_Store
 local_repo
+metastore_db
+derby.log
