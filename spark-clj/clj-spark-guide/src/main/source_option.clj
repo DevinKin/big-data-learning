@@ -1,4 +1,4 @@
-(ns main.resources.source-option
+(ns main.source-option
   (:require [sparkling.conf :as conf]
             [sparkling.core :as spark]
             [sparkling.sql :as sql]
@@ -29,8 +29,8 @@
         before-filter-df (-> sql-c
                              .read
                              (.format "parquet")
-                             (.option "modifiedBefore", "2020-07-01T05:30:00")
-                             (.option "modifiedAfter", "2020-06-01T05:30:00")
+                             ;(.option "modifiedBefore", "2020-07-01T05:30:00")
+                             ;(.option "modifiedAfter", "2020-06-01T05:30:00")
                              (.option "timeZone" "CST")
                              (.load "src/main/resources/dir1"))]
     (sql/show test-corrup-df)
