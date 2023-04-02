@@ -11,7 +11,7 @@
            (conf/master "local[*]") ; set the master
            (conf/app-name "Sql Parquet")))
 ; encrypted parquet files
-; mvn deploy:deploy-file -Dfile=local_repo/parquet-hadoop-1.12.0-tests.jar -DartifactId=parquet-hadoop -Dversion=1.12.0 -DgroupId=org.apache.parquet -Dpackaging=jar -Durl=file:local_repo
+; mvn deploy:deploy-file -Dfile=local_repo/parquet-hadoop-1.12.0-tests.jar -DartifactId=parquet-hadoop-tests -Dversion=1.12.0 -DgroupId=org.apache.parquet -Dpackaging=jar -Durl=file:local_repo
 
 (spark/with-context sc c
   (let [sql-c (sql/sql-context sc)

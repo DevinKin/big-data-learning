@@ -18,3 +18,4 @@ pom.xml.asc
 .lsp
 spark-warehouse
 .DS_Store
+local_repo
